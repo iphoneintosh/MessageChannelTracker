@@ -1,5 +1,5 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "MessageChannelTracker",
 	"version": "1",
 	"description": "This Chrome extension logs all messages sent and received via the MessageChannel API to the console.",
@@ -9,9 +9,15 @@
 			"matches": [
 				"<all_urls>"
 			],
-			"js": ["content.js"],
+			"js": [ "inject.js" ],
 			"all_frames": true,
 			"run_at": "document_start"
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [ "content.js" ],
+			"matches": [ "<all_urls>" ]
 		}
 	]
 }

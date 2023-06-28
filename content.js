@@ -90,9 +90,11 @@ let MessageChannelTracker = function() {
 	console.info(`%c[MessageChannelTracker]%c Initialized in %c${h()}%c`, "color:orange;", "", "color:green;", "");
 }
 
-MessageChannelTracker = "(" + MessageChannelTracker.toString() + ")()";
+MessageChannelTracker();
 
-let script = document.createElement("script");
-script.setAttribute("type", "text/javascript");
-script.appendChild(document.createTextNode(MessageChannelTracker));
-document.documentElement.appendChild(script);
+//MessageChannelTracker = "(" + MessageChannelTracker.toString() + ")()";
+
+//let script = document.createElement("script");
+//script.setAttribute("type", "text/javascript");
+//script.appendChild(document.createTextNode(MessageChannelTracker));
+//document.documentElement.appendChild(script);
